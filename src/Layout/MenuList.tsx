@@ -202,14 +202,14 @@ export const menuList = [
         ],
       },
       {
-        subMenu: "Agent Hours & Comparison (DEV)",
+        subMenu: "Agent Hours & Comparison",
         items: [
           {
             item: "",
             tabs: [
               {
                 id: "0IKaPmNQTmmCPv4huW5Tij",
-                env: "cdataiqdev",
+                env: "cdataiq",
                 tab: "Main Dashboard",
               }, {
                 id: "W7mA3ohBQKoCRPbTUs6biG",
