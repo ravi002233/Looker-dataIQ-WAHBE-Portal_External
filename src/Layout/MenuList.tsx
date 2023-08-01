@@ -3,7 +3,7 @@ export const menuList = [
     menu: "Oracle",
     subMenus: [
       {
-        subMenu: "Chat Interval (UAT)",
+        subMenu: "Chat Interval",
         items: [
           {
             item: "",
@@ -18,7 +18,7 @@ export const menuList = [
         ],
       },
       {
-        subMenu: "Interaction Summary (UAT)",
+        subMenu: "Interaction Summary",
         items: [
           {
             item: "",
@@ -83,7 +83,7 @@ export const menuList = [
         ],
       },
       {
-        subMenu: "Workflow Evaluation (UAT)",
+        subMenu: "Workflow Evaluation ",
         items: [
           {
             item: "",
@@ -105,7 +105,7 @@ export const menuList = [
             tabs: [
               {
                 id: "KWdsYn6IT2AcjXSe0bD0cm",
-                env: "cdataiquat",
+                env: "cdataiq",
                 tab: "Customer Information Update",
               },
             ],
