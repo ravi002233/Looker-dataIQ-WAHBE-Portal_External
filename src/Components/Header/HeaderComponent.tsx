@@ -39,6 +39,22 @@ export default function HeaderComponent(
     boxShadow:
       "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px",
   };
+
+  const linkStyles = {
+  
+    fontFamily: "Arial",
+    cursor: "pointer",
+    fontSize: "1.3rem",
+    fontWeight: 600,
+    padding: "10px",
+    border: "1px solid orange",
+    borderRadius: "4px",
+    boxShadow:
+      "rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px",
+  };
+  const redirectLink = (url: any) => {
+    window.open(url, "_blank");
+  };
   const menuItems = menuList.map((value: any) => (
     <Menu
       content={
@@ -86,13 +102,24 @@ export default function HeaderComponent(
       px="large"
       style={{ borderBottom: "1px solid #e8e8e8" }}
     >
-       <Space justify="start">
-      <Label
-        {...restProps}
-        onClick={() => props.changeMenu({ tabs: [], item: "" })}
-      >
-        <span style={iconStyles}>WAHBE Production Reporting Portal</span>
-      </Label>
+      <Space justify="start">
+        <Label
+          {...restProps}
+          onClick={() => props.changeMenu({ tabs: [], item: "" })}
+        >
+          <span style={iconStyles}>WAHBE Production Reporting Portal</span>
+        </Label>
+        <Label>
+          <span style={linkStyles}>
+            <a href="https://apps.use2.us-gov-pure.cloud/directory/#/analytics/dashboards/7f156dfe-1b32-4a1c-845f-74bc546e0dd9?tabId=7f622e0d-f89c-428d-84e7-fa50e394dd0c" target="_blank">
+              <img
+                src="https://raw.githubusercontent.com/Engage-Data-IQ/Looker-Assets/develop/genesys-redAdaptiveGLogo.png"
+                width="100px"
+                height="20"
+              />
+            </a>
+          </span>
+        </Label>
       </Space>
       <Space justify="end">
         {menuItems}
