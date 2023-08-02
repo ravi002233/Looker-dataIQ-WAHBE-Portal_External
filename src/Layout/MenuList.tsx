@@ -227,7 +227,7 @@ export const menuList = [
                 tab: "Status",
               },
               {
-                id: "uVdzRpjfIdD6suvYg6oFx",
+                id: "guVdzRpjfIdD6suvYg6oFx",
                 env: "cdataiq",
                 tab: "Call Abandon",
               },
